@@ -1,0 +1,58 @@
+html {
+	height: 94%;
+}
+body {
+	margin: 0;
+	padding: 0;
+        background:lightgray;
+	height: 95%;
+       
+}
+
+#nav{
+    z-index: 5;
+    margin:5px auto;
+    width: 960px;
+    height: 30px;
+}
+
+#header{
+    z-index: 5;
+    background:green;
+    position:fixed;
+    top: 0;
+    left:0;
+    right:0;
+}
+
+#toSeek{
+   width:190px;
+   color:grey;
+}
+
+#nav h3{
+   position: relative;
+   right: 13%;
+   top:-10px;
+   padding:0;
+   color:lightgray;
+   position:absolute;
+}
+
+#nav h3 a{
+    color:lightgray;
+    text-decoration: none;
+}
+
+#nav h3 a:visited{
+    color:lightgray;
+    text-decoration:none;
+}
+
+#nav h3 a:hover{
+    color:lightgreen;
+    text-decoration:underline;
+}
+#loupe{
+    background:url('../img/head/loupe.jpg') 0 0;
+}
