@@ -1,0 +1,247 @@
+#content{
+    margin: auto;
+    margin-top: 40px;
+    width:960px;
+    min-height:100%;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    background: white;
+}
+
+.titlePart {
+text-align: center;
+font-size: 25px;
+padding-top: 20px;
+margin-bottom: 20px;
+}
+
+.titlePart2 {
+text-align: center;
+font-size: 25px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+
+#accueilP {
+    position: absolute;
+    width: 400px;
+    height: 64px;
+    margin-left: -200px;
+    margin-top: -32px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 26px;
+    font-family: Calibri;
+    font-weight: bold;
+
+}
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+#divFormSong {
+    position: relative;
+    border: 1px solid grey;
+    background-color: #F1F1F1;
+    padding: 15px;
+    width: 240px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#divFormSong select {
+    width: 180px;
+}
+#divFormSong #ligneDuree select {
+    width: 60px;
+}
+#divFormSong strong {
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+#divFormSong tr:hover {
+    background-color: #F1F1F1;
+}
+#divForm {
+    position: relative;
+    border: 1px solid grey;
+    background-color: #F1F1F1;
+    padding: 15px;
+    width: 180px;
+    top: 100px;
+    margin: auto;
+}
+
+#divForm select {
+    width: 160px;
+}
+
+#divForm tr:hover {
+    background-color: #F1F1F1;
+}
+
+#divForm strong {
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#about, #about p {
+    text-indent: 80px;
+}
+
+#tableContent {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#lineTitle {
+    border-bottom: 1px solid black;
+}
+#addContentTable {
+    margin: auto;
+    position: relative;
+    top: 15px;
+}
+
+#addContentTable a {
+    text-decoration: none;
+}
+
+#addContentTable .addContentButton {
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: #D1F9D1;
+    color: black;
+}
+
+#addContentTable .addContentButton:hover {
+    background-color: #B5F4B5;
+}
+
+#addContentTable strong {
+    font-size: 20px;
+}
+
+
+
+.buttonAdd {
+    height: 50px;
+    left: 380px;
+    position: relative;
+    top: -15px;
+    width: 200px;
+}
+
+#playlistDiv {
+
+}
+table.toSeek_result td.toSeek_title{
+    width: 200px;
+    height: 20px;
+    margin:0;
+    padding: 0;
+}
+
+table.toSeek_result tbody tr {
+    /*border-top: 1px solid red;*/
+}
+ul.display_pl {
+    color:lightgray;
+    position: absolute;
+    padding:10px 20px;
+    border: 1px solid black;
+    background-color: green;
+}
+
+ul.display_pl a{
+    color:lightgray;
+    text-decoration: none;
+}
+ul.display_pl a:hover{
+    color:greenyellow;
+    text-decoration: underline;
+}
+ul.display_pl a:visited{
+    text-decoration: none;
+    color:lightgray;
+}
+tr:hover { background: greenyellow; }
+
+
+#popup{
+    position: absolute;
+    width: 960px;
+    top:35px;
+    z-index: 9002;
+    border: 2px solid black;
+}
+
+#blanket{
+    background-color:#111;
+    opacity: 0.65;
+    position:absolute;
+    z-index: 9001;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+
+#stats_partTable, #stats_partTable tr, #stats_partTable td, #stats_partTable th {
+   /* border: 1px solid black;*/
+}
+
+#stats_partTable{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#stats_partTable td {
+    text-indent: 120px;
+}
+#stats_partTable tr:hover  {
+    background-color: white;
+}
+#stats_partTable th {
+    padding-bottom: 15px;
+}
+
+#listSongLike{
+    position: relative;
+    left: 30px;
+}
+
+#errorMessage {
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    background-color:#DB130E;
+    top: 10px;
+}
+#errorMessageSong {
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    background-color:#DB130E;
+    top: -5px;
+}
+
+.wrapper
+{
+        background: url("../img/404.jpg");
+        width: 960px;
+        min-height: 600px;
+        
+}

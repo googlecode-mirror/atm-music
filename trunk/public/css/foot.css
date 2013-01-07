@@ -1,0 +1,28 @@
+#foot{
+   /*font-family: Calibri, Tahoma, sans-serif;*/
+   font-size: 15px;
+ /*  position: fixed;*/
+   bottom: 0;
+   right: 0;
+   left: 0;
+   height: 40px;
+   background: green;
+   margin-top: -15px;
+}
+
+
+#nav_foot{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    margin: 5px auto;
+    width: 680px;
+    height: 30px;
+}
+
+#song_stats, #album_stats, #band_stats{
+    width:300px;
+    height:300px;
+    position:relative;
+    clear:both;
+}
