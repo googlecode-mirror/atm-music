@@ -29,7 +29,7 @@ class song extends Eloquent {
     }
 
     public static function all_completed($search) {
-        return DB::query('SELECT * FROM song s JOIN songalbum sa ON s.id_song = sa.id_song JOIN album a ON sa.id_album = a.id_album JOIN band b On a.id_band = b.id_band WHERE s.title_song LIKE "%' . $search . '%" or a.name_album LIKE "%' . $search . '%" or b.name_band LIKE "%' . $search . '%"');
+        return DB::query('SELECT * FROM song s JOIN songalbum sa ON s.id_song = sa.id_song JOIN album a ON sa.id_album = a.id_album JOIN band b On a.id_band = b.id_band JOIN songkind sk ON s.id_song = sk.id_song WHERE s.title_song LIKE "%' . $search . '%" or a.name_album LIKE "%' . $search . '%" or b.name_band LIKE "%' . $search . '%"');
     }
 
     public static function from_name_song($name) {
