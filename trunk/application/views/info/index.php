@@ -2,9 +2,13 @@
 <?php
 
 ?>
+
 <div id="about">
+    <div class="img">
+<?php echo HTML::image('img/ATM2.png', 'logo ATM'); ?><br>
+<span>Logo ATM</span></div>
     <br>
-    <h2>Projet Peon</h2>
+    <h2>ATM - At The Moment</h2>
     <ul>
         <li>Version 1.0</li>
         <li>Rémi ADRIANO & Bastien THOUVEREZ</li>
@@ -12,9 +16,9 @@
 
     <p>Projet hébergé chez Google<br></p>
         <p>Fichiers sources : 
-        <a href="http://code.google.com/p/projet-peon/">code.google.com/p/projet-peon/</a><br></p>
+        <a href="http://code.google.com/p/atm-music/">code.google.com/p/atm-music/</a><br></p>
        <p> Rappport :
-        <a href="http://projet-peon.googlecode.com/files/Rapport_BT_RA.odt">projet-peon.googlecode.com/files/Rapport_BT_RA.odt</a>  </p>  
+        <a href="http://atm-music.googlecode.com/files/Rapport_BT_RA.odt">atm-music.googlecode.com/files/Rapport_BT_RA.odt</a>  </p>  
     </p>
     <br>
 

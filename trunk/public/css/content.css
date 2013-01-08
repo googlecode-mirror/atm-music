@@ -22,19 +22,26 @@ margin-top: 0px;
 margin-bottom: 20px;
 }
 
+#accueilDiv {    
+    font-family: Calibri;
+    font-size: 26px;
+    font-weight: bold;
+    height: 250px;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -125px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 400px;
+}
+
+#accueilDiv img {
+    width: 220px;
+}
 
 #accueilP {
-    position: absolute;
-    width: 400px;
-    height: 64px;
-    margin-left: -200px;
-    margin-top: -32px;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    font-size: 26px;
-    font-family: Calibri;
-    font-weight: bold;
+
 
 }
 ul{
@@ -94,6 +101,22 @@ ul{
 
 #about, #about p {
     text-indent: 80px;
+}
+
+#about .img {  
+    float: right;
+    position: relative;
+    top: 100px;
+}
+
+#about img {
+    position: relative;
+    width: 250px;
+    left: -85px;
+}
+#about .img span {
+    position: relative;
+    left: 75px;
 }
 
 #tableContent {
