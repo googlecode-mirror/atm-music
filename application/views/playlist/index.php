@@ -14,7 +14,7 @@
             <table>
                 <tr class="<?php echo $value->id_playlist ?>">
                     <td>
-                        <button class="before_delete">x</button>
+                        <button class="before_delete"></button>
                         <button class="delete_playlist">Supprimer cette playlist ?</button>
                     </td>
                     <td>
