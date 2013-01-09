@@ -51,15 +51,14 @@ class Upload_Controller extends Base_Controller {
             $this->insert_new_data();
 
             unlink('Docs/script_clem.sql');
-            
+
             return Redirect::to_action('upload')
-                    ->with('result', true);
-                    
+                            ->with('result', true);
         }
         else
             return Redirect::to_action('upload')
-                    ->with('result', false)
-                    ->with('msg', $this->_error_msg);
+                            ->with('result', false)
+                            ->with('msg', $this->_error_msg);
 
 
         //   var_dump($_FILES['upload']);
@@ -68,6 +67,8 @@ class Upload_Controller extends Base_Controller {
     public function insert_data($script) {
         $return_db = array();
         DB::connection('clem')->query('DROP TABLE if exists songs ');
+        $script = utf8_encode($script);
+        $script = str_replace('"', "-", $script);
         $create_begin = strpos($script, 'CREATE TABLE');
         $create_end = strpos($script, 'CHARSET=latin1;');
         $create_end += 15;
@@ -142,34 +143,40 @@ class Upload_Controller extends Base_Controller {
         foreach ($song_clem as $value) {
             /* AJOUT D'ARTISTES */
             if (trim($value->artist) != '') {
-                $band = new Band(null, 1, $value->artist, null, null);
+                $band = new Band(null, 1, utf8_encode($value->artist), null, null);
                 try {
                     $band->add();
                 } catch (Exception $e) {
                     $this->_error_msg .= 'artiste :' . $e->getMessage() . '<br>';
+                     break;
                 }
             }
 
             /* AJOUT D'ALBUM */
             if (trim($value->album) != '') {
-                $name_band = Band::from_name_band($value->artist);
-                $album = new Album(null, $name_band[0]->id_band, 1, $value->album, $value->year);
+                $name_band = Band::from_name_band(utf8_encode($value->artist));
+                $album = new Album(null, $name_band[0]->id_band, 1, utf8_encode($value->album), $value->year);
 
                 try {
                     $album->add();
                 } catch (Exception $e) {
                     $this->_error_msg.= 'album: ' . $e->getMessage() . '<br>';
-                 
+                     break;
                 }
             }
 
             if (trim($value->title) != '') {
-                $album = Album::from_name_album($value->album);
-                $song = new song(null, 1, $value->title, $value->year, null, $value->filename, $value->track);
+                $album = Album::from_name_album(utf8_encode($value->album));
+                $song = new song(null, 1, utf8_encode($value->title), $value->year, null, $value->filename, $value->track);
                 $song->set_id_kind(explode(';', $value->genre));
                 $song->id_album = $album[0]->id_album;
-
-                $song->add();
+                try {
+                     $song->add();
+                } catch (Exception $e) {
+                    $this->_error_msg.= 'chanson: ' . $e->getMessage() . '<br>';
+                    break;
+                }
+               
             }
         }
 
@@ -197,15 +204,13 @@ class Upload_Controller extends Base_Controller {
         $genre_unique = array_unique($genre_unique);
 
         foreach ($genre_unique as $value) {
-            $kind = new Kind($value);
+            $kind = new Kind(utf8_encode($value));
             try {
                 $kind->add();
             } catch (Exception $e) {
-                $this->_error_msg .= 'genre: '.$e->getMessage().'<br>';             
+                $this->_error_msg .= 'genre: ' . $e->getMessage() . '<br>';
             }
         }
-
-       
     }
 
 }

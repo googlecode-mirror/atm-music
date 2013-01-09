@@ -22,5 +22,4 @@ else
 ?>
 
 <?php
-
 echo render('partial.foot');

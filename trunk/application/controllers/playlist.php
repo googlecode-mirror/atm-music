@@ -146,5 +146,16 @@ class Playlist_Controller extends Base_Controller {
             
         }
     }
+    
+    public function action_delete_playlist()
+    {
+         $user = $this->is_logged();
+        if ($user === false) {
+            return Redirect::to_action('login');
+        } else {
+            $playlist = new Playlist($_POST['id']);
+            $playlist->delete();
+        }
+    }
 
 }

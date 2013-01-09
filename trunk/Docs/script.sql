@@ -130,93 +130,93 @@ create table `songKind`
 
 
 
-
-insert into user_lif values (0,'babs','$1$we1.3d5.$ZBETx580BnzoZ6TncMnSd0 ','Thouverez','Bastien','','');
-insert into user_lif values (1,'tiago','$1$Ao..JN4.$LNOReeYIbI7PVsAxvaKax0','Adriano','Rémi','','');
-insert into user_lif values (2,'user','$1$w23.3v..$kv8dljt4og2CFZWw3gBmn0','Marley','Bob','','');
-insert into user_lif values (3,'admin','$1$8D0.vY5.$Hj4oR.DzKaKX1.INjdHSw/','Juste','Dieu','','');
-
-
-insert into band values(1,1,'Koja','2007','2012');
-insert into band values(2,1,'KoRn','2012','2012');
-insert into band values(3,3,'Bob Marley','1945','1981');
-insert into band values(4,1,'Sinsémiia','1996','2010');
-insert into band values(5,1,'Trivium','2001','');
-insert into band values(6,2,'Dub Inc','1998','');
-insert into band values(7,2,'Damian Marley','1996','');
-
-
-insert into kind values ('Reggae');
-insert into kind values ('Rock\'n\'Roll');
-insert into kind values ('K-pop');
-insert into kind values ('Grunge');
-insert into kind values ('Ska');
-insert into kind values ('RnB');
-insert into kind values ('Rap');
-insert into kind values ('Metal');
-
-
-insert into album values (1, 1, 2, 'Untouchables', '2002');
-insert into album values (2, 1, 2, 'Life is peachy', '1996');
-insert into album values (3, 1, 5, 'Ascendancy', '2005');
-insert into album values (4, 3, 3, 'Kaya', '1978');
-insert into album values (5, 1, 4, 'Première récolte', '1996');
-insert into album values (6, 1, 4, 'Résistances', '1998');
-insert into album values (7, 2, 6, 'Dans le décor', '2000');
-insert into album values (8, 2, 7, 'Welcome to Jamrock', '2002');
-
-
-insert into song values (1, 1, 'Hollow life', '2002', '1\'45', 'Hollow life.mp3', 1);
-insert into song values (2, 1, 'Shoot and ladders', '2002', '2\'52', 'Shoot and ladders.mp3', 2);
-insert into song values (3, 1, 'Did my time', '2002', '1\'12', 'Did my time.mp3', 6);
-insert into song values (4, 1, 'Alone I Break', '2002', '3\'54', 'Alone I Break.mp3', 5);
-insert into song values (5, 1, 'Whats wrong', '1996', '2\'41', 'What\'s wrong.mp3', 8);
-insert into song values (6, 1, 'The deceived', '2005', '1\'36', 'The deceived.mp3', 1);
-insert into song values (7, 1, 'Rain', '2005', '3\'51', 'Rain.mp3', 5);
-insert into song values (8, 2, 'Rude Boy', '2000', '8\'45', 'Rude Boy.mp3', 1);
-insert into song values (9, 2, 'My Freestyle', '2000', '6\'41', 'My Freestyle.mp3', 5);
-insert into song values (10, 2, 'Road to Zion', '2002', '2\'38', 'Road to Zion.mp3', 7);
-insert into song values (11, 2, 'Give dem some ways', '2002', '2\'59', 'Give dem some ways.mp3', 12);
-insert into song values (12, 2, 'Beautiful', '2002', '3\'00', 'Beautiful.mp3', 5);
-insert into song values (13, 3, 'Redemption song', '1978', '1\'28', 'Redemption song.mp3', 9);
-insert into song values (14, 3, 'Is this love', '1978', '2\'54', 'Is this love.mp3', 8);
-
-
-insert into playlist values (1, 'playlist du babs', '2012');
-insert into playlist values (2, 'playlist de tiago', '2011');
-insert into playlist values (3, 'playlist de dieu', '2010');
-
-
-
-
-insert into songkind values (1, 'Metal');
-insert into songkind values (2, 'Metal');
-insert into songkind values (3, 'Metal');
-insert into songkind values (4, 'Metal');
-insert into songkind values (5, 'Reggae');
-insert into songkind values (6, 'Metal');
-insert into songkind values (7, 'Metal');
-insert into songkind values (8, 'Reggae');
-insert into songkind values (9, 'Reggae');
-insert into songkind values (10, 'Reggae');
-insert into songkind values (11, 'Reggae');
-insert into songkind values (12, 'Reggae');
-insert into songkind values (13, 'Reggae');
-insert into songkind values (14, 'Reggae');
-
-
-insert into songalbum values (1, 1);
-insert into songalbum values (2, 1);
-insert into songalbum values (3, 1);
-insert into songalbum values (4, 1);
-insert into songalbum values (5, 5);
-insert into songalbum values (6, 3);
-insert into songalbum values (7, 3);
-insert into songalbum values (8, 7);
-insert into songalbum values (9, 7);
-insert into songalbum values (10, 8);
-insert into songalbum values (11, 8);
-insert into songalbum values (12, 8);
-insert into songalbum values (13, 4);
-insert into songalbum values (14, 4);
-
+-- 
+-- insert into user_lif values (0,'babs','$1$we1.3d5.$ZBETx580BnzoZ6TncMnSd0 ','Thouverez','Bastien','','');
+-- insert into user_lif values (1,'tiago','$1$Ao..JN4.$LNOReeYIbI7PVsAxvaKax0','Adriano','Rémi','','');
+-- insert into user_lif values (2,'user','$1$w23.3v..$kv8dljt4og2CFZWw3gBmn0','Marley','Bob','','');
+-- insert into user_lif values (3,'admin','$1$8D0.vY5.$Hj4oR.DzKaKX1.INjdHSw/','Juste','Dieu','','');
+-- 
+-- 
+-- insert into band values(1,1,'Koja','2007','2012');
+-- insert into band values(2,1,'KoRn','2012','2012');
+-- insert into band values(3,3,'Bob Marley','1945','1981');
+-- insert into band values(4,1,'Sinsémiia','1996','2010');
+-- insert into band values(5,1,'Trivium','2001','');
+-- insert into band values(6,2,'Dub Inc','1998','');
+-- insert into band values(7,2,'Damian Marley','1996','');
+-- 
+-- 
+-- insert into kind values ('Reggae');
+-- insert into kind values ('Rock\'n\'Roll');
+-- insert into kind values ('K-pop');
+-- insert into kind values ('Grunge');
+-- insert into kind values ('Ska');
+-- insert into kind values ('RnB');
+-- insert into kind values ('Rap');
+-- insert into kind values ('Metal');
+-- 
+-- 
+-- insert into album values (1, 1, 2, 'Untouchables', '2002');
+-- insert into album values (2, 1, 2, 'Life is peachy', '1996');
+-- insert into album values (3, 1, 5, 'Ascendancy', '2005');
+-- insert into album values (4, 3, 3, 'Kaya', '1978');
+-- insert into album values (5, 1, 4, 'Première récolte', '1996');
+-- insert into album values (6, 1, 4, 'Résistances', '1998');
+-- insert into album values (7, 2, 6, 'Dans le décor', '2000');
+-- insert into album values (8, 2, 7, 'Welcome to Jamrock', '2002');
+-- 
+-- 
+-- insert into song values (1, 1, 'Hollow life', '2002', '1\'45', 'Hollow life.mp3', 1);
+-- insert into song values (2, 1, 'Shoot and ladders', '2002', '2\'52', 'Shoot and ladders.mp3', 2);
+-- insert into song values (3, 1, 'Did my time', '2002', '1\'12', 'Did my time.mp3', 6);
+-- insert into song values (4, 1, 'Alone I Break', '2002', '3\'54', 'Alone I Break.mp3', 5);
+-- insert into song values (5, 1, 'Whats wrong', '1996', '2\'41', 'What\'s wrong.mp3', 8);
+-- insert into song values (6, 1, 'The deceived', '2005', '1\'36', 'The deceived.mp3', 1);
+-- insert into song values (7, 1, 'Rain', '2005', '3\'51', 'Rain.mp3', 5);
+-- insert into song values (8, 2, 'Rude Boy', '2000', '8\'45', 'Rude Boy.mp3', 1);
+-- insert into song values (9, 2, 'My Freestyle', '2000', '6\'41', 'My Freestyle.mp3', 5);
+-- insert into song values (10, 2, 'Road to Zion', '2002', '2\'38', 'Road to Zion.mp3', 7);
+-- insert into song values (11, 2, 'Give dem some ways', '2002', '2\'59', 'Give dem some ways.mp3', 12);
+-- insert into song values (12, 2, 'Beautiful', '2002', '3\'00', 'Beautiful.mp3', 5);
+-- insert into song values (13, 3, 'Redemption song', '1978', '1\'28', 'Redemption song.mp3', 9);
+-- insert into song values (14, 3, 'Is this love', '1978', '2\'54', 'Is this love.mp3', 8);
+-- 
+-- 
+-- insert into playlist values (1, 'playlist du babs', '2012');
+-- insert into playlist values (2, 'playlist de tiago', '2011');
+-- insert into playlist values (3, 'playlist de dieu', '2010');
+-- 
+-- 
+-- 
+-- 
+-- insert into songkind values (1, 'Metal');
+-- insert into songkind values (2, 'Metal');
+-- insert into songkind values (3, 'Metal');
+-- insert into songkind values (4, 'Metal');
+-- insert into songkind values (5, 'Reggae');
+-- insert into songkind values (6, 'Metal');
+-- insert into songkind values (7, 'Metal');
+-- insert into songkind values (8, 'Reggae');
+-- insert into songkind values (9, 'Reggae');
+-- insert into songkind values (10, 'Reggae');
+-- insert into songkind values (11, 'Reggae');
+-- insert into songkind values (12, 'Reggae');
+-- insert into songkind values (13, 'Reggae');
+-- insert into songkind values (14, 'Reggae');
+-- 
+-- 
+-- insert into songalbum values (1, 1);
+-- insert into songalbum values (2, 1);
+-- insert into songalbum values (3, 1);
+-- insert into songalbum values (4, 1);
+-- insert into songalbum values (5, 5);
+-- insert into songalbum values (6, 3);
+-- insert into songalbum values (7, 3);
+-- insert into songalbum values (8, 7);
+-- insert into songalbum values (9, 7);
+-- insert into songalbum values (10, 8);
+-- insert into songalbum values (11, 8);
+-- insert into songalbum values (12, 8);
+-- insert into songalbum values (13, 4);
+-- insert into songalbum values (14, 4);
+-- 

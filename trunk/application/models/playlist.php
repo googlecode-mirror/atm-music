@@ -47,6 +47,13 @@ class Playlist extends Eloquent {
     {
         return DB::query('SELECT * FROM `adminplaylist` ad JOIN playlist p ON ad.id_playlist = p.id_playlist WHERE ad.id_user_lif = ?',$id_user);
     }
+    
+    public function delete()
+    {
+       DB::query('DELETE FROM adminplaylist WHERE id_playlist = '. $this->_id_playlist);
+       DB::query('DELETE FROM songplaylist WHERE id_playlist = '. $this->_id_playlist);
+       DB::query('DELETE FROM playlist WHERE id_playlist = '. $this->_id_playlist);
+    }
     public function get_id_playlist() {
         return $this->_id_playlist;
     }
