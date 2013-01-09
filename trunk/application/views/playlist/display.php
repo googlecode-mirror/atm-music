@@ -13,7 +13,7 @@
             Album
         </th>
         <th>
-            Durée
+            Supprimer
         </th>
         <th>
             
@@ -39,11 +39,8 @@
         <td >
             <?php echo $value->name_album ?>
         </td>
-        <td >
-            <?php echo $value->length_song ?>
-        </td>
         <td class="playlist_remove">
-            <button class="button_rm">Supprimer</button>
+            <button class="button_rm"> </button>
         </td>
          <td class="playlist_rm">
             Cette chanson va être rettirée. <button class="valider_rm">Continuer</button>
