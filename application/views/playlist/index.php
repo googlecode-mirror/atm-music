@@ -45,7 +45,7 @@
 
                         </td>
                         <td>
-                            <button class="user_delete">X</button>
+                            <button class="user_delete"> </button>
                         </td>
                         <td class="delete_validation">
                             

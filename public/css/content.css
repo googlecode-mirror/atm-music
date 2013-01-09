@@ -268,3 +268,11 @@ tr:hover { background: greenyellow; }
         min-height: 600px;
         
 }
+
+.user_delete, .button_rm {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: none;
+    background: url('../img/cross.png');
+}
