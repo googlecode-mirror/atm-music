@@ -355,17 +355,17 @@ function draw_song_date_chart()
                     type: 'column'
                 },
                 title: {
-                    text: 'Répartition des albums selon le genre'
+                    text: 'Répartition des chansons par date de sortie'
                 },
             
                 xAxis: {
-                    categories: ['Genre']
+                    categories: ['date']
                 },
            
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'Nombre d\'albums'
+                        text: 'Nombre de chansons'
                     }
                 },
                 legend: {
@@ -389,7 +389,7 @@ function draw_song_date_chart()
                
             });
        
-            $('#blanket').css('height',$('#popup').height()+400);
+           // $('#blanket').css('height',$('#popup').height()+400);
         }
     });  
 }

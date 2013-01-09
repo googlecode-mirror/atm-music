@@ -7,7 +7,6 @@ $(document).ready(function() {
     $(".message_success").hide();
     $(".message_fail").hide();
     $('#toSeek').click(function(){
-        draw_chart();
         $('#toSeek').val('');
     });
     /****************************/
@@ -22,15 +21,11 @@ $(document).ready(function() {
     $('ul.display_pl li a').click(function(event){
         event.preventDefault();
         var id = $(this).closest('tr').attr('id');
-        add_song_to_playlist(id, $(this).attr('class'))
+        add_song_to_playlist(id, $(this).attr('class'));
     });
     
     
-    $('ul.display_pl li a').click(function(event){
-        event.preventDefault();
-        var id = $(this).closest('tr').attr('id');
-        add_song_to_playlist(id, $(this).attr('class'))
-    });
+   
 
     /*********************************/
     $(".button_rm").click(function(){
@@ -86,6 +81,17 @@ $(document).ready(function() {
         remove_user_from_playlist(id_user,id_playlist);
     })
     
+    $('.delete_playlist').hide();
+    $('.before_delete').click(function(){
+        $('.before_delete').fadeOut(function(){
+            $('.delete_playlist').fadeIn();
+        });
+    });
+    
+    $('.delete_playlist').click(function(){
+        var id = $(this).closest('tr').attr('class');
+        delete_playlist(id);
+    });
     $('ul.display_pl').draggable();
 });
 
@@ -147,7 +153,7 @@ function add_user_to_playlist(id_playlist,username)
         },
         dataType: "html",
         success: function(data) {
-                switch(data){
+            switch(data){
                 case '1':
                     $('tr.'+id_playlist+' .user_validation').html('Utilisateur ajouté avec succés');
                     break;
@@ -191,4 +197,20 @@ function remove_user_from_playlist(id_user,id_playlist)
             }
         }
     });   
+}
+    function delete_playlist(id)
+    {
+        $.ajax({
+            url: "playlist/delete_playlist",
+            type: "POST",
+            data: {
+                id : id           
+            },
+            dataType: "html",
+            success: function(data) {
+                
+                $('table tr.'+id).hide();
+            }
+        });   
+    
 }

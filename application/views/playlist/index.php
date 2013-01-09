@@ -14,12 +14,14 @@
             <table>
                 <tr class="<?php echo $value->id_playlist ?>">
                     <td>
+                        <button class="before_delete">x</button>
+                        <button class="delete_playlist">Supprimer cette playlist ?</button>
+                    </td>
+                    <td>
                            <a class="name_playlist" href=""><?php echo $value->name_playlist . '  (' . $value->date_creation_playlist . ')'; ?></a>
 
                     </td>
-        <!--                    <td>
-                        <button>+</button>
-                    </td>-->
+
                     <td>
                         <ul>
 

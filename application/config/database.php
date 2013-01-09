@@ -61,11 +61,7 @@ return array(
 
 	'connections' => array(
 
-		'sqlite' => array(
-			'driver'   => 'sqlite',
-			'database' => 'application',
-			'prefix'   => '',
-		),
+		
 
 		'mysql' => array(
 			'driver'   => 'mysql',
@@ -88,14 +84,7 @@ return array(
 			
 		),
 
-		'sqlsrv' => array(
-			'driver'   => 'sqlsrv',
-			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
-			'prefix'   => '',
-		),
+		
 
 	),
 
