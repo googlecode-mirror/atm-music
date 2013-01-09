@@ -27,6 +27,11 @@
         Rémi Adriano: <a href="mailto: adrianoremi@gmail.com"> adrianoremi@gmail.com</a><br>
         </p><p>Bastien Thouverez: <a href="mailto: bastien.thouverez@gmail.com"> bastien.thouverez@gmail.com</a>
     </p>
+    <h2>Licence</h2>
+        <p>
+            Ce site a été créé avec l'utilisation du framework <a href="http://laravel.com/">Laravel</a>.
+        </p>
+    
 </div>
 <br>
 <?php echo render('partial.foot'); ?>
