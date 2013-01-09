@@ -269,7 +269,7 @@ tr:hover { background: greenyellow; }
         
 }
 
-.user_delete, .button_rm {
+.user_delete, .button_rm, .before_delete {
     width: 18px;
     height: 18px;
     background-color: white;
