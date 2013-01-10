@@ -18,7 +18,7 @@
         <p>Fichiers sources : 
         <a href="http://code.google.com/p/atm-music/">code.google.com/p/atm-music/</a><br></p>
        <p> Rappport :
-        <a href="http://atm-music.googlecode.com/files/Rapport_BT_RA.odt">atm-music.googlecode.com/files/Rapport_BT_RA.odt</a>  </p>  
+        <a href="http://atm-music.googlecode.com/files/ATM_Music_Adriano_Thouverez_rapport.pdf">atm-music.googlecode.com/files/ATM_Music_rapport.pdf</a>  </p>  
     </p>
     <br>
 
