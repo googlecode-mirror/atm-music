@@ -83,8 +83,10 @@ $(document).ready(function() {
     
     $('.delete_playlist').hide();
     $('.before_delete').click(function(){
-        $('.before_delete').fadeOut(function(){
-            $('.delete_playlist').fadeIn();
+        var id = $(this).closest('tr').attr('class');
+        $('tr.'+id+' .before_delete').fadeOut(function(){
+           clear_button_delete();
+            $('tr.'+id+' .delete_playlist').fadeIn();
         });
     });
     
@@ -103,6 +105,12 @@ function clear_button()
    
     $(".button_rm").show();
     $(".playlist_rm").hide();
+}
+function clear_button_delete()
+{
+    $(".delete_playlist").hide();
+    $('.before_delete').fadeIn();
+   
 }
   
 function add_song_to_playlist(id_song,id_playlist)

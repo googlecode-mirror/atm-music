@@ -53,7 +53,7 @@ return array(
 	|
 	*/
 
-	'key' => 'MySecretKeyIsTaMere!',
+	'key' => 'MySecretKeyIsASecretWord',
 
 	/*
 	|--------------------------------------------------------------------------

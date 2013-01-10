@@ -67,7 +67,6 @@ class Upload_Controller extends Base_Controller {
     public function insert_data($script) {
         $return_db = array();
         DB::connection('clem')->query('DROP TABLE if exists songs ');
-        $script = utf8_encode($script);
         $script = str_replace('"', "-", $script);
         $create_begin = strpos($script, 'CREATE TABLE');
         $create_end = strpos($script, 'CHARSET=latin1;');

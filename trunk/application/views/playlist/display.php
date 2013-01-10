@@ -43,7 +43,7 @@
             <button class="button_rm"> </button>
         </td>
          <td class="playlist_rm">
-            Cette chanson va être rettirée. <button class="valider_rm">Continuer</button>
+            Cette chanson va être retirée. <button class="valider_rm">Continuer</button>
         </td>
            
        
