@@ -8,7 +8,7 @@ et changez les informations relatives a la connection à phpmyadmin dans le fichi
 		
 		
 Voici la portion de code que vous devriez voir et qu'il vous faudra modifier pour votre utilisation
-'mysql' => array(
+		'mysql' => array(
 			'driver'   => 'mysql',
 			'host'     => 'localhost',
 			'database' => 'lif4',
@@ -28,8 +28,9 @@ Voici la portion de code que vous devriez voir et qu'il vous faudra modifier pou
 			'prefix'   => '',
 			
 		),
-		
-		
+/!\ ATTENTION /!\
+Nous avons utilisé le module de réécriture d'URL d'Apache. Donc, il faut activer le mod rewrite, sans quoi
+l'application ne fonctionnera pas!
 
 		ATM-Music 2013
 		RA
