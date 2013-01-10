@@ -2,7 +2,7 @@
 <?php
 
 ?>
-<h3> <?php echo $count ?> résultats de la recherche pour "<?php echo $toSeek ?>" </h3>
+<h3> Résultats de la recherche pour "<?php echo $toSeek ?>" </h3>
 
 
 <h4 class="titlePart2"> Chansons </h4>
