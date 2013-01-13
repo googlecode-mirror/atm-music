@@ -26,8 +26,8 @@ Voici la portion de code que vous devriez voir et qu'il vous faudra modifier pou
 			'password' => '',
 			'charset'  => 'utf8',
 			'prefix'   => '',
-			
 		),
+		
 /!\ ATTENTION /!\
 Nous avons utilisé le module de réécriture d'URL d'Apache. Donc, il faut activer le mod rewrite, sans quoi
 l'application ne fonctionnera pas!
