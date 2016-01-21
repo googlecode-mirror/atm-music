@@ -1,0 +1,1 @@
+Gestionnaire de playlist en HTML5, CSS3, PHP5 développé dans le cadre du module LIF4 de la licence Maths/Info UCBL1.
